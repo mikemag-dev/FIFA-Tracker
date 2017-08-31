@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B099A2753E1695B83596739D /* Pods_FIFA_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96C2B65964459AB883042AC /* Pods_FIFA_Tracker.framework */; };
 		DD70602D1F57ADDB00FA143C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD70602C1F57ADDB00FA143C /* AppDelegate.swift */; };
 		DD70602F1F57ADDB00FA143C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD70602E1F57ADDB00FA143C /* ViewController.swift */; };
 		DD7060321F57ADDB00FA143C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7060301F57ADDB00FA143C /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C01E25252E6A89F37BFE980 /* Pods-FIFA Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIFA Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIFA Tracker/Pods-FIFA Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		B2B1981556430B400811E6C1 /* Pods-FIFA Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIFA Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIFA Tracker/Pods-FIFA Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		DD7060291F57ADDB00FA143C /* FIFA Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FIFA Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD70602C1F57ADDB00FA143C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD70602E1F57ADDB00FA143C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		DD7060331F57ADDB00FA143C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD7060361F57ADDB00FA143C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD7060381F57ADDB00FA143C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96C2B65964459AB883042AC /* Pods_FIFA_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIFA_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B099A2753E1695B83596739D /* Pods_FIFA_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49F518590562CCE0EC1C64C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E96C2B65964459AB883042AC /* Pods_FIFA_Tracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		624983F548173F1CFF515E24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C01E25252E6A89F37BFE980 /* Pods-FIFA Tracker.debug.xcconfig */,
+				B2B1981556430B400811E6C1 /* Pods-FIFA Tracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DD7060201F57ADDB00FA143C = {
 			isa = PBXGroup;
 			children = (
 				DD70602B1F57ADDB00FA143C /* FIFA Tracker */,
 				DD70602A1F57ADDB00FA143C /* Products */,
+				624983F548173F1CFF515E24 /* Pods */,
+				49F518590562CCE0EC1C64C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD70603B1F57ADDB00FA143C /* Build configuration list for PBXNativeTarget "FIFA Tracker" */;
 			buildPhases = (
+				26F81A10BF7B4CABA7A01EE6 /* [CP] Check Pods Manifest.lock */,
 				DD7060251F57ADDB00FA143C /* Sources */,
 				DD7060261F57ADDB00FA143C /* Frameworks */,
 				DD7060271F57ADDB00FA143C /* Resources */,
+				D284D8A10E3308097E814CF8 /* [CP] Embed Pods Frameworks */,
+				EAF2EB6F78BC0E93B43FFC9B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26F81A10BF7B4CABA7A01EE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D284D8A10E3308097E814CF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FIFA Tracker/Pods-FIFA Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF2EB6F78BC0E93B43FFC9B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FIFA Tracker/Pods-FIFA Tracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD7060251F57ADDB00FA143C /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		DD70603C1F57ADDB00FA143C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C01E25252E6A89F37BFE980 /* Pods-FIFA Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q2X6898EQF;
@@ -274,6 +350,7 @@
 		};
 		DD70603D1F57ADDB00FA143C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B1981556430B400811E6C1 /* Pods-FIFA Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q2X6898EQF;
