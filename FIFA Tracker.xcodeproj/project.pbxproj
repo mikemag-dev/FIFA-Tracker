@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		B099A2753E1695B83596739D /* Pods_FIFA_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96C2B65964459AB883042AC /* Pods_FIFA_Tracker.framework */; };
 		DD70602D1F57ADDB00FA143C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD70602C1F57ADDB00FA143C /* AppDelegate.swift */; };
-		DD70602F1F57ADDB00FA143C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD70602E1F57ADDB00FA143C /* ViewController.swift */; };
+		DD70602F1F57ADDB00FA143C /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD70602E1F57ADDB00FA143C /* DashboardViewController.swift */; };
 		DD7060321F57ADDB00FA143C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7060301F57ADDB00FA143C /* Main.storyboard */; };
 		DD7060341F57ADDB00FA143C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7060331F57ADDB00FA143C /* Assets.xcassets */; };
 		DD7060371F57ADDB00FA143C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7060351F57ADDB00FA143C /* LaunchScreen.storyboard */; };
+		DD7060401F57AFB500FA143C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD70603F1F57AFB500FA143C /* GoogleService-Info.plist */; };
+		DDE7130A1F57C26B0043DB8F /* AddGameResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE713091F57C26B0043DB8F /* AddGameResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +22,13 @@
 		B2B1981556430B400811E6C1 /* Pods-FIFA Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIFA Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIFA Tracker/Pods-FIFA Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		DD7060291F57ADDB00FA143C /* FIFA Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FIFA Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD70602C1F57ADDB00FA143C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD70602E1F57ADDB00FA143C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD70602E1F57ADDB00FA143C /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		DD7060311F57ADDB00FA143C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD7060331F57ADDB00FA143C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD7060361F57ADDB00FA143C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD7060381F57ADDB00FA143C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD70603F1F57AFB500FA143C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DDE713091F57C26B0043DB8F /* AddGameResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGameResultViewController.swift; sourceTree = "<group>"; };
 		E96C2B65964459AB883042AC /* Pods_FIFA_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FIFA_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,13 +83,31 @@
 			isa = PBXGroup;
 			children = (
 				DD70602C1F57ADDB00FA143C /* AppDelegate.swift */,
-				DD70602E1F57ADDB00FA143C /* ViewController.swift */,
+				DDE7130B1F57C2980043DB8F /* ViewControllers */,
+				DD70603E1F57AF7600FA143C /* Supporting Files */,
+			);
+			path = "FIFA Tracker";
+			sourceTree = "<group>";
+		};
+		DD70603E1F57AF7600FA143C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				DD7060301F57ADDB00FA143C /* Main.storyboard */,
 				DD7060331F57ADDB00FA143C /* Assets.xcassets */,
+				DD70603F1F57AFB500FA143C /* GoogleService-Info.plist */,
 				DD7060351F57ADDB00FA143C /* LaunchScreen.storyboard */,
 				DD7060381F57ADDB00FA143C /* Info.plist */,
 			);
-			path = "FIFA Tracker";
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDE7130B1F57C2980043DB8F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD70602E1F57ADDB00FA143C /* DashboardViewController.swift */,
+				DDE713091F57C26B0043DB8F /* AddGameResultViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD7060371F57ADDB00FA143C /* LaunchScreen.storyboard in Resources */,
+				DD7060401F57AFB500FA143C /* GoogleService-Info.plist in Resources */,
 				DD7060341F57ADDB00FA143C /* Assets.xcassets in Resources */,
 				DD7060321F57ADDB00FA143C /* Main.storyboard in Resources */,
 			);
@@ -212,7 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD70602F1F57ADDB00FA143C /* ViewController.swift in Sources */,
+				DD70602F1F57ADDB00FA143C /* DashboardViewController.swift in Sources */,
+				DDE7130A1F57C26B0043DB8F /* AddGameResultViewController.swift in Sources */,
 				DD70602D1F57ADDB00FA143C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +405,7 @@
 				DD70603D1F57ADDB00FA143C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
